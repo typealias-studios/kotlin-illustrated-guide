@@ -1,0 +1,26 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Illustrated Guide" />
+    <inspection_tool class="CanBeVal" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CascadeIf" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="ControlFlowWithEmptyBody" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EqualsOrHashCode" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="IfThenToElvis" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="IntroduceWhenSubject" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="KotlinConstantConditions" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MayBeConstant" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="MemberVisibilityCanBePrivate" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PackageDirectoryMismatch" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="RedundantExplicitType" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RedundantNullableReturnType" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RedundantWith" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="ReplaceCallWithBinaryOperator" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="ReplaceGetOrSet" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="ReplacePutWithAssignment" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="ReplaceToWithInfixForm" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="ReplaceWithOperatorAssignment" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="UnnecessaryVariable" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="UnusedEquals" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="UnusedSymbol" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
