@@ -17,6 +17,13 @@ jobs:
       - name: Configure Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Build
+      - name: Build Gradle project
         run: ./gradlew build
-        
+
+      - name: Compile Kotlin scripts
+        run: |
+          find scripts/ -name "*.kts" -print0 | while read -d $'\0' file
+          do
+              echo "Compiling $file..."
+              kotlin "$file"
+          done
