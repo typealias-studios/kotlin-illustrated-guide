@@ -25,5 +25,11 @@ jobs:
           find scripts/ -name "*.kts" -print0 | while read -d $'\0' file
           do
               echo "Compiling $file..."
-              kotlin "$file"
+              # 1. The flags are needed because:
+              #  * the first one: otherwise, we get 'error: no source files'
+              #  * the second one: otherwise, we get 'scripts are not yet supported with K2 in LightTree mode,
+              #    consider using K1 or disable LightTree mode with -Xuse-fir-lt=false'
+              # 2. We use the compiler instead of saying 'kotlin "$file"' because we just want to compile
+              #    the file, not run it.
+              kotlinc -Xallow-any-scripts-in-source-roots -Xuse-fir-lt=false "$file"
           done
