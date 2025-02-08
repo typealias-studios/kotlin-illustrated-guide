@@ -1,6 +1,6 @@
 package listing_18_08
 
-sealed interface Beverage
+interface Beverage
 enum class Tea : Beverage { GREEN_TEA, BLACK_TEA, RED_TEA }
 enum class Coffee : Beverage { LIGHT_ROAST, MEDIUM_ROAST, DARK_ROAST }
 
@@ -16,6 +16,6 @@ fun main() {
     fun drink(coffee: Coffee) = println("Drinking coffee: $coffee")
     fun drink(tea: Tea) = println("Drinking tea: $tea")
     
-    // drink(mugOfCoffee.beverage)
-    // drink(mugOfTea.beverage)
+//     drink(mugOfCoffee.beverage)
+//     drink(mugOfTea.beverage)
 }

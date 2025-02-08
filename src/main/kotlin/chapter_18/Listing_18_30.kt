@@ -1,6 +1,6 @@
 package listing_18_30
 
-sealed interface Beverage {
+interface Beverage {
     val idealTemperature: Int
 }
 

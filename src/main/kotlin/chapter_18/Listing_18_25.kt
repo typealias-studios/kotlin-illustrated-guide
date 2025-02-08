@@ -10,5 +10,4 @@ enum class Soup : Food { TOMATO, CHICKEN_NOODLE }
 // ----------------------------------------------------------------------
 
 class BowlOfSoup(override val food: Soup) : Dish<Soup>
-
 val bowlOfSoup: BowlOfSoup = BowlOfSoup(Soup.TOMATO)

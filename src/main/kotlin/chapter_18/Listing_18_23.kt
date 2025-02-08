@@ -1,6 +1,6 @@
 package listing_18_23
 
-sealed interface Beverage {
+interface Beverage {
     val idealTemperature: Int
 }
 
@@ -26,5 +26,4 @@ class Mug<T : Beverage>(val beverage: T)
 // -------------------------------------------------
 
 class ComboOrder<T : Food, U : Beverage>(val food: T, val beverage: U)
-
 val combo: ComboOrder<Pastry, Tea> = ComboOrder(Pastry.MUFFIN, Tea.GREEN_TEA)

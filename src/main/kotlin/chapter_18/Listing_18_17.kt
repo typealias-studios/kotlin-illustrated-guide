@@ -4,7 +4,7 @@ package listing_18_17
 // Listing 18.17 - Adding an `idealTemperature` property to each beverage type.
 // ----------------------------------------------------------------------------
 
-sealed interface Beverage {
+interface Beverage {
     val idealTemperature: Int
 }
 
