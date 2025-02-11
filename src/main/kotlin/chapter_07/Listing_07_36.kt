@@ -12,7 +12,7 @@ fun percentageDiscount(percentageOff: Double): (Double) -> Double {
 // Listing 7.36 - A small improvement to avoid some duplicated code.
 // -----------------------------------------------------------------
 
-fun discountForCouponCode(couponCode: String): (Double) -> Double = when (couponCode) {
+fun discount(couponCode: String): (Double) -> Double = when (couponCode) {
     "FIVE_BUCKS" -> dollarAmountDiscount(5.0)
     "NINE_BUCKS" -> dollarAmountDiscount(9.0)
     "TAKE_10"    -> percentageDiscount(0.10)

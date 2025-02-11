@@ -18,12 +18,12 @@ fun calculateTotal(
     return total
 }
 
-fun discountForCouponCode(couponCode: String): (Double) -> Double = when (couponCode) {
+fun discount(couponCode: String): (Double) -> Double = when (couponCode) {
     "FIVE_BUCKS" -> { price -> price - 5.0 }
     "TAKE_10"    -> { price -> price * 0.9 }
     else         -> { price -> price }
 }
 
 val initialPrice = 20.0
-val couponDiscount = discountForCouponCode("FIVE_BUCKS")
+val couponDiscount = discount("FIVE_BUCKS")
 val total = calculateTotal(initialPrice, couponDiscount)

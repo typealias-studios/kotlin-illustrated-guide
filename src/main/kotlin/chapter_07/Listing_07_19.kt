@@ -18,7 +18,7 @@ fun discountFiveDollars(price: Double): Double = price - 5.0
 fun discountTenPercent(price: Double): Double = price * 0.9
 fun noDiscount(price: Double): Double = price
 
-fun discountForCouponCode(couponCode: String): (Double) -> Double = when (couponCode) {
+fun discount(couponCode: String): (Double) -> Double = when (couponCode) {
     "FIVE_BUCKS" -> ::discountFiveDollars
     "TAKE_10"    -> ::discountTenPercent
     else         -> ::noDiscount
@@ -29,7 +29,7 @@ fun discountForCouponCode(couponCode: String): (Double) -> Double = when (coupon
 // ------------------------------------------------------------------------------------------
 
 fun main() {
-    val withFiveDollarsOff = calculateTotal(20.0, discountForCouponCode("FIVE_BUCKS")) // $16.35
-    val withTenPercentOff  = calculateTotal(20.0, discountForCouponCode("TAKE_10"))    // $19.62
-    val fullPrice          = calculateTotal(20.0, discountForCouponCode("NONE"))       // $21.80
+    val withFiveDollarsOff = calculateTotal(20.0, discount("FIVE_BUCKS")) // $16.35
+    val withTenPercentOff  = calculateTotal(20.0, discount("TAKE_10"))    // $19.62
+    val fullPrice          = calculateTotal(20.0, discount("NONE"))       // $21.80
 }
