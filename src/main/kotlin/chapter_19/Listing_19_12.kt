@@ -19,6 +19,6 @@ open class VendingMachine {
 // Listing 19.12 - Error: Property type is (Dime) -> Snack, which is not a subtype of overridden (Coin) -> Snack.
 // --------------------------------------------------------------------------------------------------------------
 
-class AnyMoneyVendingMachine : VendingMachine() {
+class DimeOnlyVendingMachine : VendingMachine() {
     // override val purchase: (Dime) -> Snack = { randomSnack() }
 }
