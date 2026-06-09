@@ -1,18 +1,18 @@
 plugins {
-    kotlin("jvm") version "2.1.0"
+    kotlin("jvm") version "2.4.0"
 }
 
 group = "com.daveleeds"
-version = "0.22.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.1")
-    implementation("io.ktor:ktor-client-core-jvm:3.0.3")
-    implementation("io.ktor:ktor-client-cio-jvm:3.0.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
+    implementation("io.ktor:ktor-client-core-jvm:3.5.0")
+    implementation("io.ktor:ktor-client-cio-jvm:3.5.0")
 }
 
 tasks.test {

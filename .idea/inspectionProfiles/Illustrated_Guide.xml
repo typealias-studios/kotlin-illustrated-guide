@@ -4,12 +4,12 @@
     <inspection_tool class="CanBeVal" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="CascadeIf" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="ControlFlowWithEmptyBody" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="DuplicatedCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="EqualsOrHashCode" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="IfThenToElvis" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="IntroduceWhenSubject" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="KotlinConstantConditions" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MayBeConstant" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="MemberVisibilityCanBePrivate" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PackageDirectoryMismatch" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantExplicitType" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantNullableReturnType" enabled="false" level="WARNING" enabled_by_default="false" />
